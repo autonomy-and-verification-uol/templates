@@ -45,15 +45,18 @@
 % footline made of 2 blocks, where the left (authors) is less wide than the right (title) 
 \setbeamertemplate{footline}
 {%
-\begin{beamercolorbox}[wd=0.4\textwidth,ht=3ex,dp=1.5ex,leftskip=.5em,rightskip=.5em]{author in head/foot}%
-\usebeamerfont{author in head/foot}%
-\insertframenumber/\inserttotalframenumber\hfill\insertshortauthor%
-\end{beamercolorbox}%
-\vspace*{-4.5ex}\hspace*{0.4\textwidth}%
-\begin{beamercolorbox}[wd=0.6\textwidth,ht=3ex,dp=1.5ex,left,leftskip=.5em]{title in head/foot}%
-\usebeamerfont{title in head/foot}%
-\insertshorttitle%
-\end{beamercolorbox}%
+	\hbox{%
+		\begin{beamercolorbox}[wd=0.4\textwidth,ht=2ex,dp=1.5ex,leftskip=.5em,rightskip=.5em]{author 
+				in head/foot}%
+			\usebeamerfont{author in head/foot}%
+			\insertframenumber/\inserttotalframenumber\hfill\insertshortauthor%
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.6\textwidth,ht=2ex,dp=1.5ex,left,leftskip=.5em,rightskip=.5em]{title 
+				in head/foot}%
+			\usebeamerfont{title in head/foot}%
+			\insertshorttitle\hfill\insertdate%
+		\end{beamercolorbox}%
+	}
 }
 
 % set headline
